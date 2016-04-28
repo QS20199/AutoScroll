@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+
+	"name": "AutoScroll",
+	"description": "自动滚屏，可用于曲谱等页面。",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "./assets/img/icon.png",
+		"default_popup": "./assets/html/popup.html",
+		"default_title": "Make this page red"
+	},
+	"background": {
+			"scripts": ["./assets/js/background.js"],
+			"persistent": false
+	},
+	"permissions": [
+		"activeTab"
+	],
+	"minimum_chrome_version": "8.0",
+}
