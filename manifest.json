@@ -11,11 +11,13 @@
 		"default_title": "Make this page red"
 	},
 	"background": {
-			"scripts": ["./assets/js/background.js"],
-			"persistent": false
+		"scripts": ["./assets/js/eventPage.js"],
+		"persistent": false
 	},
-	"permissions": [
-		"activeTab"
-	],
-	"minimum_chrome_version": "8.0",
+	"permissions": ["activeTab",
+					"storage",
+					"http://*/*",
+					"https://*/*",
+					"tabs"],
+	"minimum_chrome_version": "8.0"
 }
